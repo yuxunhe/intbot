@@ -1,0 +1,17 @@
+<!doctype html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather|Chakra+Petch" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<title>{% block title %}{% endblock %} Intellectual Bot</title>
+<body>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
+</body>

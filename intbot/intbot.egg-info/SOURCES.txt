@@ -1,0 +1,7 @@
+setup.py
+intbot.egg-info/PKG-INFO
+intbot.egg-info/SOURCES.txt
+intbot.egg-info/dependency_links.txt
+intbot.egg-info/not-zip-safe
+intbot.egg-info/requires.txt
+intbot.egg-info/top_level.txt
